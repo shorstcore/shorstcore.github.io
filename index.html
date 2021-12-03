@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>NBZDRKN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NBZDRKN</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #overlay {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 3em;
+            color: white;
+        }
+
+        a {
+            font-size: 5vw;
+            text-decoration: none;
+            font-family: 'Mukta', sans-serif;
+            color: white;
+        }
+
+        a:hover {
+            color: #fbcfff;
+        }
+
+        #container {
+
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-	<a href='https://t.me/nbzdrkn'><big>Niebezdniy Drokon 🐲</big></a>
+<video playsinline autoplay muted loop>
+    <source src="drok.mp4" type="video/mp4">
+</video>
+<div id="container">
+    <div id='overlay'>
+        <a href='https://t.me/nbzdrkn'>Niebiezdny Drokon</a>
+    </div>
+</div>
 </body>
 </html>
