@@ -15,27 +15,30 @@
             top: 0;
             left: 0;
         }
-
+        
         #overlay {
+            font-size: 5vw;
+            width: 100vw;
             text-align: center;
             background: rgba(0, 0, 0, 0.2);
-            padding: 3em;
-            color: white;
+            padding: 1em;
+        }
+
+        #overlay:hover {
+            background: rgba(255, 255, 255, 0.5);
         }
 
         a {
-            font-size: 5vw;
             text-decoration: none;
             font-family: 'Mukta', sans-serif;
             color: white;
         }
 
         a:hover {
-            color: #fbcfff;
+            color: black;
         }
 
         #container {
-
             width: 100vw;
             height: 100vh;
             position: fixed;
@@ -52,10 +55,13 @@
 <video playsinline autoplay muted loop>
     <source src="drok.mp4" type="video/mp4">
 </video>
-<div id="container">
-    <div id='overlay'>
-        <a href='https://t.me/nbzdrkn'>Niebiezdny Drokon</a>
+    <div id="container">
+        <a href='https://t.me/nbzdrkn'>
+        <div id='overlay'>
+            Niebiezdny Drokon
+        </div>
+        </a>
     </div>
-</div>
+
 </body>
 </html>
